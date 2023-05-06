@@ -1,0 +1,389 @@
+/* VARIABLES siempre se declaran al principio del codigo*/
+/*
+$colorPrincipal:yellow;
+$colorSecundario:red;
+$fuenteGrande:25px;
+$imagenLogo:url etcetc y dejamos una imagen como variable
+$fuente: Tahoma
+$imagenGrande:500px;
+luego en nuestro estilo reemplazamos por estas variables
+*/
+/*OPERACIONES*/
+/*.imagenGrande{
+    heigth:$imagenGrande;
+    widht:auto;
+}
+.imagenMediana{
+    $imagenGrande/2;
+}
+*/
+/*INICIO DE ESTILOS*/
+* { /* FALTA LINKEAR EL STYLES CSS NO ESTE AL INDEX Y BORRAR EL CSS LUEGO DE ANIDAR TODO ACA*/
+  /*selector universal */
+  margin: 0;
+  /*borra los valores que trae css por defecto */
+  padding: 0;
+  box-sizing: border-box;
+  /*deja las cajas exactamente en el tamano que yo le doy, sin importar si agregamos padding o border, etc. la caja se mantiene en el tamano original*/
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*cambia la medida del rem
+antes 16px, con la configuracion 10px = 1rem */
+.Logo {
+  /*INICIO y caracteristicas generales*/
+  height: 155px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 25px;
+  text-align: center;
+  background-image: url(https://w7.pngwing.com/pngs/126/461/png-transparent-textured-textures-black-texture-background-texture-black-texture-poster-banner-textured.png);
+  border-bottom: inset;
+  border-top: inset;
+}
+ul ul {
+  list-style-type: none;
+}
+
+/* nav li{display: inline} DEJA TODOS LOS LINKS EN UNA LINEA */
+li a {
+  list-style-type: none;
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.textoPpal {
+  font-size: 47px;
+  text-align: center;
+}
+
+.fotoGrande {
+  width: 1263px;
+}
+
+footer a { /*se puede anidar*/
+  color: black;
+}
+
+footer li {
+  padding: 10px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.fbimg {
+  height: 25px;
+}
+
+.instaimg {
+  height: 25px;
+}
+
+.gridProductos {
+  /* PRODUCTOS */
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+  grid-template-rows: 0.1fr 2.4fr 0.1fr;
+  gap: 0px 0px;
+  grid-template-areas: "logo menu" "body body" "footer footer";
+}
+
+.Logo {
+  grid-area: logo;
+}
+
+.gridMenu {
+  grid-area: menu;
+}
+
+.frases {
+  grid-area: body;
+}
+
+.gridFooter {
+  grid-area: footer;
+  padding-bottom: 0px;
+}
+
+aside {
+  text-align: center;
+}
+
+.frases {
+  background-color: dimgrey;
+  text-align: center;
+}
+
+.frases img {
+  height: 300px;
+  width: 300px;
+  border-style: inset;
+}
+
+@media screen and (max-width: 768px) {
+  /* TABLET || la caracteristica que va a verse al modificar la pagina y sus medidas...
+  background-color: green; /* podemos usar AND ej: (min-width: 480px) and (max-width:700px)... cuando este en ese rango de medidas se aplica la caracteristica que queremos. Tambien podemos cambiar la orientacion, ej: (orientation:landscape) q es horizontal como para celus*/
+  .gridProductos {
+    background-color: black;
+    background-image: none;
+    border-style: none;
+  }
+  .frases {
+    background-color: black;
+  }
+  .Logo {
+    background-color: #f2e9e4;
+  }
+  main img {
+    height: 200px;
+    width: 200px;
+  }
+  .outletfoto {
+    background-color: black;
+  }
+  .gridFooter a {
+    color: #f2e9e4;
+  }
+  .gridFooter {
+    background-color: #4a4e69;
+    padding-bottom: 0px;
+  }
+  .menu {
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
+  .productoResponsive {
+    background-color: black;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* CEL || */
+  .gridProductos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 2.7fr 0.1fr;
+    gap: 0px 0px;
+    grid-template-areas: "Menu" "remes" "Footer";
+  }
+  .menu {
+    grid-area: Menu;
+  }
+  .frases {
+    grid-area: remes;
+  }
+  .gridFooter {
+    grid-area: Footer;
+  }
+  .Logo {
+    display: none;
+  }
+  .menu li {
+    display: inline;
+    padding: 5px;
+  }
+  .productoResponsive {
+    background-color: black;
+  }
+  .gridProductos {
+    background-color: black;
+    background-image: none;
+    border-style: none;
+  }
+  .frases {
+    background-color: black;
+  }
+  main img {
+    height: 200px;
+    width: 200px;
+  }
+  .outletfoto {
+    background-color: black;
+  }
+  .gridFooter a {
+    color: #f2e9e4;
+  }
+  .gridFooter {
+    background-color: #4a4e69;
+  }
+  .Logo {
+    display: none;
+  }
+}
+.gridOutlet {
+  /*OUTLET*/
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+  grid-template-rows: 0.1fr 2.4fr 0.1fr;
+  grid-template-areas: "logo menu" "remes remes" "footer footer";
+}
+
+.Logo {
+  grid-area: logo;
+}
+
+.gridMenuOutlet {
+  grid-area: menu;
+}
+
+.outletfoto {
+  grid-area: remes;
+}
+
+.gridFooter {
+  grid-area: footer;
+}
+
+.outletfoto {
+  text-align: center;
+  background-color: dimgrey;
+}
+
+main img {
+  /*con esto ahorro ponerle una clase a cada imagen*/
+  border-style: double;
+  border-color: white;
+  border-radius: 25px;
+  height: 400px;
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.OutletTitulo {
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+  text-align: center;
+  font-size: 120px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  /* TABLET || la caracteristica que va a verse al modificar la pagina y sus medidas...
+  background-color: green; /* podemos usar AND ej: (min-width: 480px) and (max-width:700px)... cuando este en ese rango de medidas se aplica la caracteristica que queremos. Tambien podemos cambiar la orientacion, ej: (orientation:landscape) q es horizontal como para celus*/
+  .menu {
+    background-color: black;
+    background-image: none;
+    border-style: none;
+    margin-bottom: 20px;
+  }
+  .outletResponsive {
+    background-color: black;
+  }
+  .Logo {
+    background-color: #f2e9e4;
+  }
+  main img {
+    height: 200px;
+    width: 200px;
+  }
+  .OutletTitulo {
+    font-size: 50px;
+    color: #f2e9e4;
+  }
+  .outletfoto {
+    background-color: black;
+  }
+  .gridFooter a {
+    color: #f2e9e4;
+  }
+  .gridFooter {
+    background-color: #4a4e69;
+  }
+}
+/* TAMANO TABLET */
+@media screen and (max-width: 480px) {
+  /*CELUS */
+  .gridOutlet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 2.7fr 0.1fr;
+    gap: 0px 0px;
+    grid-template-areas: "Menu Menu" "remes remes" "Footer Footer";
+  }
+  .menu {
+    grid-area: Menu;
+  }
+  .outletfoto {
+    grid-area: remes;
+  }
+  .gridFooter {
+    grid-area: Footer;
+  }
+  .Logo {
+    display: none;
+  }
+  .menu li {
+    display: inline;
+    padding: 5px;
+  }
+  .OutletTitulo {
+    display: none;
+  }
+  .outletfoto img {
+    height: 250px;
+    width: 250px;
+  }
+  .outletfoto {
+    padding: 10px 0 10px 0;
+  }
+  header a {
+    box-shadow: 2px 2px 5px #fc894d;
+  }
+}
+/* responsive celu OUTLET*/
+.divnossotros {
+  /* NOSOTROS */
+  display: inline-block;
+}
+
+.historia {
+  font-family: "Courier New", Courier, monospace;
+  font-style: italic;
+  text-align: center;
+  font-size: 120px;
+  background-color: rgb(132, 127, 136);
+  border-radius: 10px;
+}
+
+.nosotros1 {
+  margin-top: 5px;
+  background-image: url(../multimedia/nosotros1.jpg);
+  background-size: cover;
+  color: black;
+  font-weight: 700;
+  text-shadow: powderblue;
+  border: groove 20px gray;
+}
+
+.nosotros2 {
+  margin-top: 5px;
+  background-image: url(../multimedia/nosotros2.webp);
+  background-size: cover;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border: groove 20px black;
+}
+
+main h2 {
+  text-align: center;
+  font-size: 90px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+form {
+  font-size: 15px;
+  color: white;
+  height: 250px;
+  text-align: center;
+  background-color: gray;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */
