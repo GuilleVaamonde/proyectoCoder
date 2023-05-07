@@ -18,7 +18,7 @@ luego en nuestro estilo reemplazamos por estas variables
 }
 */
 /*INICIO DE ESTILOS*/
-* { /* FALTA LINKEAR EL STYLES CSS NO ESTE AL INDEX Y BORRAR EL CSS LUEGO DE ANIDAR TODO ACA*/
+* { /* FALTA LINKEAR EL STYLES CSS, NO ESTE AL INDEX Y BORRAR EL CSS LUEGO DE ANIDAR TODO ACA*/
   /*selector universal */
   margin: 0;
   /*borra los valores que trae css por defecto */
@@ -47,9 +47,6 @@ ul {
   border-bottom: inset;
   border-top: inset;
 }
-ul ul {
-  list-style-type: none;
-}
 
 /* nav li{display: inline} DEJA TODOS LOS LINKS EN UNA LINEA */
 li a {
@@ -68,24 +65,57 @@ li a {
   width: 1263px;
 }
 
-footer a { /*se puede anidar*/
+footer a {
   color: black;
 }
-
 footer li {
   padding: 10px;
   text-align: center;
   list-style-type: none;
 }
-
-.fbimg {
+footer img {
   height: 25px;
 }
 
-.instaimg {
-  height: 25px;
+@media screen and (max-width: 768px) { /*Generales tablet*/
+  .textoPpal {
+    font-size: 18px;
+  }
+  nav a {
+    padding: 10px;
+  }
+  .fotoGrande {
+    width: auto;
+  }
+  footer {
+    background-color: #4a4e69;
+  }
+  footer a {
+    color: #f2e9e4;
+  }
+  h2 {
+    display: none;
+  }
+  .menuInicio li {
+    display: inline;
+  }
 }
-
+@media screen and (max-width: 480px) { /*generales Celular*/
+  .fotoGrande {
+    width: 480px;
+  }
+  iframe {
+    padding: 25px;
+    width: 480px;
+    background-color: #4a4e69;
+  }
+  nav a {
+    padding: 0px;
+  }
+  .historia {
+    display: none;
+  }
+}
 .gridProductos {
   /* PRODUCTOS */
   display: grid;
@@ -148,7 +178,7 @@ aside {
   .outletfoto {
     background-color: black;
   }
-  .gridFooter a {
+  .Footer a {
     color: #f2e9e4;
   }
   .gridFooter {
@@ -156,7 +186,7 @@ aside {
     padding-bottom: 0px;
   }
   .menu {
-    padding-top: 10px;
+    padding-top: 0px;
     padding-bottom: 0px;
   }
   .productoResponsive {

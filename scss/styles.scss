@@ -21,7 +21,7 @@ luego en nuestro estilo reemplazamos por estas variables
 /*INICIO DE ESTILOS*/
 
 
-* { /* FALTA LINKEAR EL STYLES CSS NO ESTE AL INDEX Y BORRAR EL CSS LUEGO DE ANIDAR TODO ACA*/
+* { /* FALTA LINKEAR EL STYLES CSS, NO ESTE AL INDEX Y BORRAR EL CSS LUEGO DE ANIDAR TODO ACA*/
     /*selector universal */
     margin: 0;
     /*borra los valores que trae css por defecto */
@@ -54,9 +54,6 @@ ul {
     background-image: url(https://w7.pngwing.com/pngs/126/461/png-transparent-textured-textures-black-texture-background-texture-black-texture-poster-banner-textured.png);
     border-bottom: inset;
     border-top: inset;
-    ul{
-        list-style-type: none;
-    }
 }
 /* nav li{display: inline} DEJA TODOS LOS LINKS EN UNA LINEA */
 li a {
@@ -76,22 +73,61 @@ li a {
     width: 1263px;
 }
 
-footer a {          /*se puede anidar*/
-    color: black;
+footer{          
+    a{
+        color: black;
+    }
+    li{
+        padding: 10px;
+        text-align: center;
+        list-style-type: none;
+    }
+    img{
+        height:25px;
+    }
 }
-
-footer li {
-    padding: 10px;
-    text-align: center;
-    list-style-type: none;
+@media screen and (max-width: 768px) { /*Generales tablet*/
+    .textoPpal{
+        font-size:18px;
+    }
+    nav{
+        a{
+            padding: 10px;
+        }
+    }
+    .fotoGrande{
+        width: auto;
+    }
+    footer{
+        background-color: #4a4e69;
+        a{
+            color: #f2e9e4;
+        }
+    }
+    h2{
+        display: none;
+    }
+    .menuInicio{
+        li{
+            display: inline;
+            }
+    }
 }
-
-.fbimg {
-    height: 25px;
-}
-
-.instaimg {
-    height: 25px;
+@media screen and (max-width: 480px){  /*generales Celular*/
+    .fotoGrande{
+        width: 480px;
+    }
+    iframe{
+        padding: 25px;
+        width: 480px;
+        background-color:#4a4e69;
+    }
+    nav a{
+        padding: 0px;
+    }
+    .historia{
+    display: none;
+    }
 }
 
 .gridProductos {
@@ -169,7 +205,7 @@ aside {
         background-color: black;
     }
 
-    .gridFooter a {
+    .Footer a {
         color: #f2e9e4;
     }
 
@@ -179,7 +215,7 @@ aside {
     }
 
     .menu {
-        padding-top: 10px;
+        padding-top: 0px;
         padding-bottom: 0px;
     }
 
