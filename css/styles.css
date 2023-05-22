@@ -1,419 +1,548 @@
-/* VARIABLES siempre se declaran al principio del codigo*/
-/*
-$colorPrincipal:yellow;
-$colorSecundario:red;
-$fuenteGrande:25px;
-$imagenLogo:url etcetc y dejamos una imagen como variable
-$fuente: Tahoma
-$imagenGrande:500px;
-luego en nuestro estilo reemplazamos por estas variables
-*/
-/*OPERACIONES*/
-/*.imagenGrande{
-    heigth:$imagenGrande;
-    widht:auto;
+/* VARIABLES aca podemos usar la paleta de colores del sitio*/
+/* $fuente: dejamos una fuente para ir cambiando  */
+@media screen and (max-width: 480px) {
+  /* INICIO  CEL*/
+  .mainInicioResponsive {
+    height: 500px;
+    position: relative;
+  }
+  .mainInicioResponsive .fotoGrande {
+    display: none;
+  }
+  .btn {
+    position: absolute;
+    bottom: 100px;
+  }
+  .textoHijo {
+    height: 400px;
+    background-image: url(../multimedia/fotoppal.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .textoHijo .listaInicio {
+    font-weight: bold;
+    margin-top: 25px;
+  }
+  .textoHijo .listaInicio p {
+    text-shadow: 0 0 0.4em rgb(255, 255, 255), 0 0 0.4em rgb(255, 255, 255), 0 0 0.4em rgb(255, 255, 255);
+  }
 }
-.imagenMediana{
-    $imagenGrande/2;
+@media screen and (min-width: 481px) and (max-width: 780px) {
+  /* INICIO  TABLET*/
+  .mainInicioResponsive {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    height: 450px;
+    width: 770px;
+    background-image: url(../multimedia/fotoppal.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .fotoGrande {
+    display: none;
+  }
+  .btn {
+    position: absolute;
+    bottom: 200px;
+  }
+  .listaInicio {
+    font-weight: bold;
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+  .listaInicio p {
+    text-shadow: 0 0 0.4em rgb(255, 255, 255), 0 0 0.4em rgb(255, 255, 255), 0 0 0.4em rgb(255, 255, 255);
+  }
+  .textoInicio {
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    font-size: 25px;
+  }
 }
-*/
-/*INICIO DE ESTILOS*/
-* { /* FALTA LINKEAR EL STYLES CSS, NO ESTE AL INDEX Y BORRAR EL CSS LUEGO DE ANIDAR TODO ACA*/
+/* FIN INICIO */
+@media screen and (min-width: 10px) and (max-width: 780px) {
+  /* PRODUCTOS */
+  #carouselExample {
+    display: initial;
+  }
+  #carouselExample .carousel-control-prev-icon {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+  }
+  #carouselExample .carousel-control-next-icon {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+  }
+  #carouselExample img {
+    margin: 10px;
+  }
+  .frases {
+    display: none;
+  }
+}
+/* FIN PRODUCTOS */
+@media screen and (min-width: 890px) { /* NOSOTROS */
+  #accordionFlushExample { /* ACORDEON PARA RESPONSIVE */
+    display: none;
+  }
+  main {
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 781px) and (max-width: 890px) { /* NOSOTROS */
+  #accordionFlushExample { /* ACORDEON PARA RESPONSIVE */
+    display: none;
+  }
+  .divnosotros {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    scrollbar-width: 10px;
+  }
+}
+@media screen and (max-width: 780px) and (min-width: 481px) {
+  main {
+    margin-bottom: 20px;
+  }
+  .nosotros1 img {
+    display: none;
+  }
+  .nosotros1 p {
+    display: none;
+  }
+  .nosotros2 img {
+    display: none;
+  }
+  .nosotros2 p {
+    display: none;
+  }
+  .historiaResponsive {
+    padding-top: 15px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    margin-left: -35px;
+    text-align: left;
+  }
+  .historiaResponsive h1 {
+    font-size: 25px;
+  }
+  #accordionFlushExample {
+    display: initial;
+    width: 100%;
+    margin-top: -60px;
+    margin-left: -100px;
+  }
+  #accordionFlushExample button {
+    background-color: #1c1c1c;
+    color: #ecebe4;
+    border-radius: 5px;
+  }
+  #flush-collapseOne {
+    font-weight: 700;
+    background-color: #ecebe4;
+    margin-left: -5px;
+    border-radius: 10px;
+  }
+  #flush-collapseOne div {
+    font-size: 11px;
+    text-align: center;
+    margin: 15px 15px 15px 25px;
+  }
+  #flush-collapseTwo {
+    font-weight: 700;
+    background-color: #ecebe4;
+    margin-left: -5px;
+    border-radius: 10px;
+    margin-bottom: -200px;
+  }
+  #flush-collapseTwo div {
+    font-size: 11px;
+    text-align: center;
+    margin: 15px 15px 15px 25px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .historiaResponsive {
+    margin-top: -20px;
+    margin-bottom: 50px;
+    margin-left: -35px;
+    text-align: left;
+  }
+  .historiaResponsive h1 {
+    font-size: 25px;
+  }
+  #accordionFlushExample {
+    display: initial;
+    width: 479px;
+    margin-top: -120px;
+    margin-left: -200px;
+  }
+  #accordionFlushExample button {
+    background-color: #1c1c1c;
+    color: #ecebe4;
+    border-radius: 5px;
+  }
+  .nosotros1 img {
+    display: none;
+  }
+  .nosotros1 p {
+    display: none;
+  }
+  .nosotros2 img {
+    display: none;
+  }
+  .nosotros2 p {
+    display: none;
+  }
+  #flush-collapseOne {
+    font-weight: 700;
+    background-color: #ecebe4;
+    margin-left: -5px;
+    border-radius: 10px;
+  }
+  #flush-collapseOne div {
+    font-size: 11px;
+    text-align: center;
+    margin: 15px 15px 15px 25px;
+  }
+  #flush-collapseTwo {
+    font-weight: 700;
+    background-color: #ecebe4;
+    margin-left: -5px;
+    border-radius: 10px;
+    margin-bottom: -200px;
+  }
+  #flush-collapseTwo div {
+    font-size: 11px;
+    text-align: center;
+    margin: 15px 15px 15px 25px;
+  }
+} /* FIN NOSOTROS */
+@media screen and (max-width: 480px) { /* CONTACTO */
+  .flexContacto {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+  .formResponsive {
+    position: absolute;
+    top: 1;
+    left: 1;
+    right: 1;
+    bottom: 1;
+    margin: auto;
+  }
+  iframe {
+    display: none;
+  }
+}
+.divLogo {
+  text-align: center;
+}
+
+.logo {
+  text-align: center;
+  width: 200px;
+}
+
+header {
+  background-color: #1c1c1c;
+}
+
+nav ul {
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  color: #ecebe4;
+  text-decoration: none;
+}
+
+/* Ejemplo de Anidacion */
+nav a:hover {
+  color: #1c1c1c;
+  background-color: #ecebe4;
+  border-radius: 6px;
+}
+
+footer {
+  background-color: #1c1c1c;
+  font-size: 15px;
+  list-style: none;
+}
+footer a {
+  text-decoration: none;
+  color: #ecebe4;
+  margin: 20px 0px 20px 20px;
+}
+footer li {
+  text-align: center;
+}
+footer img {
+  height: 40px;
+}
+
+.mainInicio { /*FLEXBOX*/
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*     .fotoGrande { AJUSTA EL FONDO DE UNA IMAGEN CON EL COLOR DE FONDO
+          mix-blend-mode: multiply; 
+      }
+   */
+}
+.mainInicio ul li {
+  list-style: none;
+  font-size: 20px;
+}
+.mainInicio .btn {
+  font-size: 20px;
+  position: absolute;
+  right: 200px;
+  text-align: right;
+  background-color: #1c1c1c;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.mainInicio .btn a {
+  text-decoration: none;
+  color: #ecebe4;
+}
+.mainInicio .btn a:hover {
+  color: #ecebe4;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.animate_animated.animate__bounceInDown {
+  display: none;
+}
+
+.frases img {
+  height: 300px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin: 5px;
+  padding: 15px;
+}
+.frases img:hover {
+  padding: 5px;
+}
+
+#carouselExample { /* PARA NO VER EL CARRUSEL EN TAMANO WEB */
+  display: none;
+}
+
+.mainOutlet {
+  position: relative;
+  height: 500px;
+}
+
+.prueba { /*centrar un hijo respecto al padre de arriba*/
+  height: 400px;
+  width: 430px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.prueba img {
+  border: 10px solid #1c1c1c;
+  border-top-right-radius: 150px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 150px;
+  height: 400px;
+}
+
+.fondoOutlet {
+  background-color: #ecebe4;
+}
+
+.carousel-control-prev-icon {
+  background-color: #1c1c1c;
+  border-radius: 10px;
+}
+
+.carousel-control-next-icon {
+  background-color: #1c1c1c;
+  border-radius: 10px;
+}
+
+.divnosotros {
+  position: relative;
+  height: 430px;
+  width: 100%;
+  display: flex;
+}
+.divnosotros img {
+  height: 300px;
+  width: 300px;
+}
+.divnosotros p {
+  margin: 10px;
+  margin-top: 100px;
+  height: 400px;
+  width: 250px;
+}
+.divnosotros p:hover {
+  font-weight: 700;
+  font-size: 12px;
+  height: 400px;
+  text-align: center;
+}
+.divnosotros div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0px 15px 50px;
+}
+
+.historia {
+  position: relative;
+  font-size: 45px;
+  margin: 23px 0px 0px 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* .mainContacto {
+    height: 430px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.divForm {
+    background-color: $colorlinks;
+    width: 500px;
+    .form {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    h2{
+        text-align: center;
+    }
+} */
+.container {
+  display: flex;
+  width: 100%;
+  height: 430px;
+  align-items: center;
+  justify-content: space-around;
+}
+.container form {
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  background-color: #1c1c1c;
+}
+.container .textoForm {
+  margin-top: 50px;
+  margin-left: 10px;
+}
+.container .inputs {
+  margin-bottom: 5px;
+  width: 370px;
+  height: 30px;
+  font-size: 17px;
+}
+.container textarea {
+  width: 370px;
+  font-size: 11px;
+}
+.container button {
+  background-color: #ecebe4;
+  color: #1c1c1c;
+  height: 23px;
+  width: 370px;
+  margin-left: 3px;
+  border-radius: 15px;
+}
+.container button:hover {
+  height: 45px;
+  font-size: 25px;
+}
+.container button:active {
+  background-color: #ffb703;
+}
+.container .submit {
+  font-size: 18px;
+}
+.container label {
+  color: #ecebe4;
+}
+.container .checkbox {
+  margin-left: 120px;
+}
+
+form {
+  display: inline-block;
+  /* Permite que el formulario y el mapa se alineen uno al lado del otro */
+  width: 500px;
+}
+
+#mapa {
+  display: inline-block; /* Permite que el mapa se alinee uno al lado del otro */
+}
+
+.linkMapa {
+  display: none;
+}
+
+* {
+  /* FALTA LINKEAR EL STYLES CSS, NO ESTE AL INDEX Y BORRAR EL CSS LUEGO DE ANIDAR TODO ACA*/
   /*selector universal */
   margin: 0;
   /*borra los valores que trae css por defecto */
   padding: 0;
   box-sizing: border-box;
   /*deja las cajas exactamente en el tamano que yo le doy, sin importar si agregamos padding o border, etc. la caja se mantiene en el tamano original*/
+  /* font famili puede ir aca */
 }
 
 html {
   font-size: 62.5%;
 }
 
-/*cambia la medida del rem
-antes 16px, con la configuracion 10px = 1rem */
-.Logo {
-  /*INICIO y caracteristicas generales*/
-  height: 155px;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  font-size: 25px;
-  text-align: center;
-  background-image: url(https://w7.pngwing.com/pngs/126/461/png-transparent-textured-textures-black-texture-background-texture-black-texture-poster-banner-textured.png);
-  border-bottom: inset;
-  border-top: inset;
-}
-
-/* nav li{display: inline} DEJA TODOS LOS LINKS EN UNA LINEA */
-li a {
-  list-style-type: none;
-  color: white;
-  font-size: 22px;
-  text-decoration: none;
-}
-
-.textoPpal {
-  font-size: 47px;
-  text-align: center;
-}
-
-.fotoGrande {
-  width: 1263px;
-}
-
-footer a {
-  color: black;
-}
-footer li {
-  padding: 10px;
-  text-align: center;
-  list-style-type: none;
-}
-footer img {
-  height: 25px;
-}
-
-@media screen and (max-width: 768px) { /*Generales tablet*/
-  .textoPpal {
-    font-size: 18px;
-  }
-  nav a {
-    padding: 10px;
-  }
-  .fotoGrande {
-    width: auto;
-  }
-  footer {
-    background-color: #4a4e69;
-  }
-  footer a {
-    color: #f2e9e4;
-  }
-  h2 {
-    display: none;
-  }
-  .menuInicio li {
-    display: inline;
-  }
-}
-@media screen and (max-width: 480px) { /*generales Celular*/
-  .fotoGrande {
-    width: 480px;
-  }
-  iframe {
-    padding: 25px;
-    width: 480px;
-    background-color: #4a4e69;
-  }
-  nav a {
-    padding: 0px;
-  }
-  .historia {
-    display: none;
-  }
-}
-.gridProductos {
-  /* PRODUCTOS */
-  display: grid;
-  grid-template-columns: 0.6fr 1fr;
-  grid-template-rows: 0.1fr 2.4fr 0.1fr;
-  gap: 0px 0px;
-  grid-template-areas: "logo menu" "body body" "footer footer";
-}
-
-.Logo {
-  grid-area: logo;
-}
-
-.gridMenu {
-  grid-area: menu;
-}
-
-.frases {
-  grid-area: body;
-}
-
-.gridFooter {
-  grid-area: footer;
-  padding-bottom: 0px;
-}
-
-aside {
-  text-align: center;
-}
-
-.frases {
-  background-color: dimgrey;
-  text-align: center;
-}
-
-.frases img {
-  height: 300px;
-  width: 300px;
-  border-style: inset;
-}
-
-@media screen and (max-width: 768px) {
-  /* TABLET || la caracteristica que va a verse al modificar la pagina y sus medidas...
-  background-color: green; /* podemos usar AND ej: (min-width: 480px) and (max-width:700px)... cuando este en ese rango de medidas se aplica la caracteristica que queremos. Tambien podemos cambiar la orientacion, ej: (orientation:landscape) q es horizontal como para celus*/
-  .gridProductos {
-    background-color: black;
-    background-image: none;
-    border-style: none;
-  }
-  .frases {
-    background-color: black;
-  }
-  .Logo {
-    background-color: #f2e9e4;
-  }
-  main img {
-    height: 200px;
-    width: 200px;
-  }
-  .outletfoto {
-    background-color: black;
-  }
-  .Footer a {
-    color: #f2e9e4;
-  }
-  .gridFooter {
-    background-color: #4a4e69;
-    padding-bottom: 0px;
-  }
-  .menu {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-  .productoResponsive {
-    background-color: black;
-  }
-}
-@media screen and (max-width: 480px) {
-  /* CEL || */
-  .gridProductos {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 2.7fr 0.1fr;
-    gap: 0px 0px;
-    grid-template-areas: "Menu" "remes" "Footer";
-  }
-  .menu {
-    grid-area: Menu;
-  }
-  .frases {
-    grid-area: remes;
-  }
-  .gridFooter {
-    grid-area: Footer;
-  }
-  .Logo {
-    display: none;
-  }
-  .menu li {
-    display: inline;
-    padding: 5px;
-  }
-  .productoResponsive {
-    background-color: black;
-  }
-  .gridProductos {
-    background-color: black;
-    background-image: none;
-    border-style: none;
-  }
-  .frases {
-    background-color: black;
-  }
-  main img {
-    height: 200px;
-    width: 200px;
-  }
-  .outletfoto {
-    background-color: black;
-  }
-  .gridFooter a {
-    color: #f2e9e4;
-  }
-  .gridFooter {
-    background-color: #4a4e69;
-  }
-  .Logo {
-    display: none;
-  }
-}
-.gridOutlet {
-  /*OUTLET*/
-  display: grid;
-  grid-template-columns: 0.6fr 1fr;
-  grid-template-rows: 0.1fr 2.4fr 0.1fr;
-  grid-template-areas: "logo menu" "remes remes" "footer footer";
-}
-
-.Logo {
-  grid-area: logo;
-}
-
-.gridMenuOutlet {
-  grid-area: menu;
-}
-
-.outletfoto {
-  grid-area: remes;
-}
-
-.gridFooter {
-  grid-area: footer;
-}
-
-.outletfoto {
-  text-align: center;
-  background-color: dimgrey;
-}
-
-main img {
-  /*con esto ahorro ponerle una clase a cada imagen*/
-  border-style: double;
-  border-color: white;
-  border-radius: 25px;
-  height: 400px;
-  width: 400px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.OutletTitulo {
-  font-family: "Courier New", Courier, monospace;
-  font-style: italic;
-  text-align: center;
-  font-size: 120px;
-  border-radius: 10px;
-}
-
-@media screen and (max-width: 768px) {
-  /* TABLET || la caracteristica que va a verse al modificar la pagina y sus medidas...
-  background-color: green; /* podemos usar AND ej: (min-width: 480px) and (max-width:700px)... cuando este en ese rango de medidas se aplica la caracteristica que queremos. Tambien podemos cambiar la orientacion, ej: (orientation:landscape) q es horizontal como para celus*/
-  .menu {
-    background-color: black;
-    background-image: none;
-    border-style: none;
-    margin-bottom: 20px;
-  }
-  .outletResponsive {
-    background-color: black;
-  }
-  .Logo {
-    background-color: #f2e9e4;
-  }
-  main img {
-    height: 200px;
-    width: 200px;
-  }
-  .OutletTitulo {
-    font-size: 50px;
-    color: #f2e9e4;
-  }
-  .outletfoto {
-    background-color: black;
-  }
-  .gridFooter a {
-    color: #f2e9e4;
-  }
-  .gridFooter {
-    background-color: #4a4e69;
-  }
-}
-/* TAMANO TABLET */
-@media screen and (max-width: 480px) {
-  /*CELUS */
-  .gridOutlet {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 2.7fr 0.1fr;
-    gap: 0px 0px;
-    grid-template-areas: "Menu Menu" "remes remes" "Footer Footer";
-  }
-  .menu {
-    grid-area: Menu;
-  }
-  .outletfoto {
-    grid-area: remes;
-  }
-  .gridFooter {
-    grid-area: Footer;
-  }
-  .Logo {
-    display: none;
-  }
-  .menu li {
-    display: inline;
-    padding: 5px;
-  }
-  .OutletTitulo {
-    display: none;
-  }
-  .outletfoto img {
-    height: 250px;
-    width: 250px;
-  }
-  .outletfoto {
-    padding: 10px 0 10px 0;
-  }
-  header a {
-    box-shadow: 2px 2px 5px #fc894d;
-  }
-}
-/* responsive celu OUTLET*/
-.divnossotros {
-  /* NOSOTROS */
-  display: inline-block;
-}
-
-.historia {
-  font-family: "Courier New", Courier, monospace;
-  font-style: italic;
-  text-align: center;
-  font-size: 120px;
-  background-color: rgb(132, 127, 136);
-  border-radius: 10px;
-}
-
-.nosotros1 {
-  margin-top: 5px;
-  background-image: url(../multimedia/nosotros1.jpg);
-  background-size: cover;
-  color: black;
-  font-weight: 700;
-  text-shadow: powderblue;
-  border: groove 20px gray;
-}
-
-.nosotros2 {
-  margin-top: 5px;
-  background-image: url(../multimedia/nosotros2.webp);
-  background-size: cover;
-  color: black;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  border: groove 20px black;
-}
-
-main h2 {
-  text-align: center;
-  font-size: 90px;
-  font-family: "Courier New", Courier, monospace;
-}
-
-form {
-  font-size: 15px;
-  color: white;
-  height: 250px;
-  text-align: center;
-  background-color: gray;
-  margin-bottom: 20px;
-}
+/*  GRADIENTES SINTAXIS*/
+/* ul{
+    background: linear-gradient(to left,red, yellow);
+} */
+/* TRANSFORMACIONES SINTAXIS */
+/* TRANSLATE ambos ejes */
+/* div{
+    transform: translate(10px, 120px); 
+} */
+/* div{ solo un eje 
+    transform: translateX(450px);
+}*/
+/* ROTATE */
+/* div{
+    transform:rotate(10deg) 
+} AMBOS EJES*/
+/* 
+div{ solo un eje
+    transform: rotateY(123deg);
+} */
 
 /*# sourceMappingURL=styles.css.map */

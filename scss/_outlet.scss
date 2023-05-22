@@ -1,0 +1,38 @@
+$colorFondos: #1c1c1c;
+$colorlinks: #ecebe4;
+$fuenteGrande: 15px;
+
+.mainOutlet {
+    position: relative;
+    height: 500px;
+}
+
+.prueba { /*centrar un hijo respecto al padre de arriba*/
+    height: 400px;
+    width: 430px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    img{
+        border: 10px solid $colorFondos;
+        border-top-right-radius: 150px;
+border-bottom-right-radius: 50px;
+border-bottom-left-radius: 150px;
+        height: 400px;
+    }
+}
+.fondoOutlet{
+    background-color: $colorlinks;
+
+}
+.carousel-control-prev-icon{
+    background-color: $colorFondos;
+    border-radius: 10px;
+}
+.carousel-control-next-icon{
+    background-color: $colorFondos;
+    border-radius: 10px;
+}

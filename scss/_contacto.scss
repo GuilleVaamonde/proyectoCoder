@@ -1,0 +1,92 @@
+$colorFondos: #1c1c1c;
+$colorlinks: #ecebe4;
+$fuenteGrande: 15px;
+
+
+
+/* .mainContacto {
+    height: 430px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.divForm {
+    background-color: $colorlinks;
+    width: 500px;
+    .form {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    h2{
+        text-align: center;
+    }
+} */
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 430px;
+    align-items: center;
+    justify-content:space-around;
+    form{
+        width: 400px;
+        height: 250px;
+        border-radius: 10px;
+        background-color: $colorFondos;
+    }
+    .textoForm{
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+    .inputs{
+        margin-bottom: 5px;
+        width:370px;
+        height: 30px;
+        font-size: 17px;
+    }
+    textarea{
+        width:370px;
+        font-size: 11px;
+    }
+    button{
+        background-color: $colorlinks;
+        color: $colorFondos;
+        height: 23px;
+        width: 370px;
+        margin-left: 3px;
+        border-radius: 15px;
+    &:hover{
+        height: 45px;
+        font-size: 25px;
+    }
+    &:active{
+        background-color: #ffb703;
+    }
+    }
+    .submit{
+        font-size: 18px;
+    }
+        label{
+        color: $colorlinks;
+    }
+    .checkbox{
+        margin-left: 120px;
+    }
+}
+
+form {
+    display: inline-block;
+    /* Permite que el formulario y el mapa se alineen uno al lado del otro */
+    width: 500px;}
+#mapa {
+    display: inline-block; /* Permite que el mapa se alinee uno al lado del otro */
+}
+.linkMapa{
+    display: none;
+}

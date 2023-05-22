@@ -1,0 +1,38 @@
+$colorFondos:#1c1c1c;
+$colorlinks: #ecebe4;
+$fuenteGrande:15px;
+
+.divLogo{
+    text-align: center;
+}
+.logo{
+    text-align: center;
+    width: 200px;
+}
+
+header{
+    background-color: $colorFondos;
+}
+nav ul{
+    font-size: $fuenteGrande;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2px;
+    li{
+        list-style: none;
+        a{
+            color: $colorlinks;
+            text-decoration: none;
+        }
+    }
+}
+/* Ejemplo de Anidacion */
+nav a{ 
+        &:hover{
+        color: $colorFondos;
+        background-color: $colorlinks;
+        border-radius: 6px;
+    }
+}
+

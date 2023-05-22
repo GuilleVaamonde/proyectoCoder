@@ -1,0 +1,296 @@
+$colorFondos: #1c1c1c;
+$colorlinks: #ecebe4;
+$fuenteGrande: 15px;
+
+@media screen and (max-width: 480px) {
+
+    /* INICIO  CEL*/
+    .mainInicioResponsive {
+        height: 500px;
+        position: relative;
+
+        .fotoGrande {
+            display: none;
+        }
+    }
+
+    .btn {
+        position: absolute;
+        bottom: 100px;
+    }
+
+    .textoHijo {
+        height: 400px;
+        background-image: url(../multimedia/fotoppal.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        .listaInicio {
+            font-weight: bold;
+            margin-top: 25px;
+
+            p {
+                text-shadow: 0 0 0.4em rgb(255, 255, 255), 0 0 0.4em rgb(255, 255, 255),
+                    0 0 0.4em rgb(255, 255, 255);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width:780px) {
+
+    /* INICIO  TABLET*/
+    .mainInicioResponsive {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        position: relative;
+        height: 450px;
+        width: 770px;
+        background-image: url(../multimedia/fotoppal.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .fotoGrande {
+        display: none;
+    }
+
+    .btn {
+        position: absolute;
+        bottom: 200px;
+    }
+
+    .listaInicio {
+        font-weight: bold;
+        margin-top: 25px;
+        margin-left: 25px;
+
+        p {
+            text-shadow: 0 0 0.4em rgb(255, 255, 255), 0 0 0.4em rgb(255, 255, 255),
+                0 0 0.4em rgb(255, 255, 255);
+        }
+    }
+
+    .textoInicio {
+        position: absolute;
+        top: 0px;
+        text-align: center;
+        font-size: 25px;
+    }
+
+}
+
+/* FIN INICIO */
+
+@media screen and (min-width: 10px) and (max-width:780px) {
+    /* PRODUCTOS */
+
+
+    #carouselExample {
+        display: initial;
+
+        .carousel-control-prev-icon {
+            background-color: $colorFondos;
+            border-radius: 10px;
+        }
+
+        .carousel-control-next-icon {
+            background-color: $colorFondos;
+            border-radius: 10px;
+        }
+
+        img {
+            margin: 10px;
+        }
+    }
+
+    .frases {
+        display: none;
+    }
+
+}
+
+/* FIN PRODUCTOS */
+@media screen and (min-width:890px) {     /* NOSOTROS */
+    
+
+    #accordionFlushExample{ /* ACORDEON PARA RESPONSIVE */
+        display: none;
+    }
+    main{
+        flex-wrap: nowrap;
+    }
+    }
+@media screen and (min-width: 781px) and (max-width:890px) {     /* NOSOTROS */
+    
+
+    #accordionFlushExample{ /* ACORDEON PARA RESPONSIVE */
+        display: none;
+    }
+    .divnosotros{
+    display: flex;
+    flex-wrap: wrap;
+    overflow:scroll;
+    scrollbar-width: 10px;
+}
+    }
+    
+@media screen and (max-width: 780px) and (min-width:481px) {
+    main{
+        margin-bottom: 20px;
+    }
+    .nosotros1 img {
+        display: none;
+    }
+
+    .nosotros1 p {
+        display: none;
+    }
+    .nosotros2 img{
+        display: none;
+    }
+    .nosotros2 p{
+        display: none;
+    }
+    .historiaResponsive{
+        padding-top: 15px;
+        margin-top: -20px;
+            margin-bottom: 20px;
+            margin-left: -35px;
+            text-align: left;
+        h1{
+        font-size: 25px;
+        }
+    }
+    #accordionFlushExample {
+        display: initial;
+        width: 100%;
+        margin-top: -60px;
+        margin-left: -100px;
+        button{
+            background-color: $colorFondos;
+            color: $colorlinks;
+            border-radius: 5px;
+        }
+
+    }
+
+
+#flush-collapseOne{
+    font-weight: 700;
+    background-color: $colorlinks;
+    margin-left: -5px;
+    border-radius: 10px;
+    div{
+        font-size: 11px;
+        text-align: center;
+        margin: 15px 15px 15px 25px;
+    }
+}
+#flush-collapseTwo{
+    font-weight: 700;
+    background-color: $colorlinks;
+    margin-left: -5px;
+    border-radius: 10px;
+    div{
+        font-size: 11px;
+        text-align: center;
+        margin: 15px 15px 15px 25px;
+    }
+    margin-bottom: -200px;
+}
+}
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+
+
+    .historiaResponsive{
+        margin-top: -20px;
+            margin-bottom: 50px;
+            margin-left: -35px;
+            text-align: left;
+        h1{
+        font-size: 25px;
+        }
+    }
+    #accordionFlushExample {
+        display: initial;
+        width: 479px;
+        margin-top: -120px;
+        margin-left: -200px;
+        button{
+            background-color: $colorFondos;
+            color: $colorlinks;
+            border-radius: 5px;
+        }
+
+    }
+
+    .nosotros1 img {
+        display: none;
+    }
+
+    .nosotros1 p {
+        display: none;
+    }
+    .nosotros2 img{
+        display: none;
+    }
+    .nosotros2 p{
+        display: none;
+    }
+#flush-collapseOne{
+    font-weight: 700;
+    background-color: $colorlinks;
+    margin-left: -5px;
+    border-radius: 10px;
+    div{
+        font-size: 11px;
+        text-align: center;
+        margin: 15px 15px 15px 25px;
+    }
+}
+#flush-collapseTwo{
+    font-weight: 700;
+    background-color: $colorlinks;
+    margin-left: -5px;
+    border-radius: 10px;
+    div{
+        font-size: 11px;
+        text-align: center;
+        margin: 15px 15px 15px 25px;
+    }
+    margin-bottom: -200px;
+}
+} /* FIN NOSOTROS */
+
+@media screen and (max-width: 480px) { /* CONTACTO */
+
+    .flexContacto{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        justify-items: center;
+    }
+    
+    .formResponsive{
+        position: absolute;
+        top: 1;
+        left: 1;
+        right: 1;
+        bottom: 1;
+        margin: auto;
+    }
+    
+    iframe{
+display: none;
+    }
+
+}

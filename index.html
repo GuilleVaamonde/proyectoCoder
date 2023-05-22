@@ -1,52 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dale Bo! Remeras</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="multimedia/download.png" type="image/x-icon"> <!-- FAVICON -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script> <!-- BOOTSTRAP POR LINK DIRECTO se pone antes que nuestro CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> <!-- ANIMACIONES -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- ARCHIVO SASS -->
+    <link rel="shortcut icon" href="multimedia/dbologoN.jpg" type="image/x-icon"> <!-- FAVICON -->
 </head>
 
-<body>
-    <div>
-        <img src="multimedia/dbologo.jpg" alt="LogoDBO" title="Dale Bo Remeras" class="Logo";>
-    </div>
-<header class="menu">
-<nav class="menuInicio">
-    <ul>
+<body class="container-fluid">
+    <header class="headerInicio">
+        <!--         <div>
+            <a href="../index.html"><img src="../multimedia/dbologo.jpg" alt="" class="logo"></a>
+        </div> -->
+        <div class="divLogo animate__animated animate__bounceInDown ">
+            <a href="index.html"><img src="multimedia/dbologo.jpg" alt="logoDbo" class="logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</li></a>
+                <li><a href="paginas/Productos.html">Productos</li></a>
+                <li><a href="paginas/Outlet.html">Outlet</li></a>
+                <li><a href="paginas/Nosotros.html">Nosotros</li></a>
+                <li><a href="paginas/Contacto.html">Contacto</li></a>
+            </ul>
+        </nav>
+    </header>
 
-        <li><a href="index.html"><em>Inicio</em></li></a>
-        <li><a href="paginas/Productos.html">Productos</li></a>
-        <li><a href="paginas/Outlet.html">Outlet</li></a>
-        <li><a href="paginas/Nosotros.html">Nosotros</li></a>
-        <li><a href="paginas/Contacto.html">Contacto</li></a>
+    <main class="mainInicioResponsive">
+        <section class="mainInicio">
+            <div>
+                <img src="multimedia/fotoppal.jpg" alt="fotoprincipal" title="foto principal" class="fotoGrande">
+            </div>
+            <div class="textoHijo">
 
-    </ul>
-    </nav>
-</header>  
-
-
-<section> 
-    <P class="textoPpal">
-Diseñamos y estampamos remeras con tu logo o diseño favorito.
-Para empresas y particulares.
-    </P>
-<img src="multimedia/fotoppal.jpg" alt="fotoprincipal" title="foto principal" class="fotoGrande">
-</section>
-<aside>
-    <iframe width=480px height="300px" src="https://www.google.com/maps/d/embed?mid=1ysO2PtPwolKPmpx7HWJLc9n7vRMQXgk&hl=es&ehbc=2E312F" width="640" height="480"></iframe>
-    
-</aside>
-<footer >
-    <li >
-        <img src="multimedia/fblogo.jpg" alt="" class="fbimg">
-        <a href="https://www.facebook.com/daleboremeras/">facebook</a>
-        <img src="multimedia/logoinsta.jpg" alt="" class="instaimg">
-        <a href="https://www.instagram.com/daleboremeras/">instagram</a>
-        <a href="paginas/Contacto.html"> | CONTACTO</a>
-    </li>
-</footer>
+                <h3 class="textoInicio">Diseñamos y estampamos diferentes articulos con tu logo o diseño favorito.
+                    Para empresas y particulares.</h3>
+                
+                <ul class="listaInicio">
+                    <li><p>Tazas</p></li>
+                    <li><p>Gorras</p></li>
+                    <li><p>Canguros</p></li>
+                    <li><p>Camperas</p></li>
+                    <li><p>Remeras basicas</p></li>
+                    <li><p>Remeras tipo polo</p></li>
+                    
+                </ul>
+                
+            </div>
+            <button class="btn animate__animated animate__bounceInDown"><a href="paginas/Productos.html"  >Ver mas</a></button>
+        </section>
+    </main>
+    <footer>
+        <li>
+            <a href="https://www.facebook.com/daleboremeras/"> <img src="multimedia/facebook.png" alt=""> </a>
+            <a href="https://www.instagram.com/daleboremeras/"> <img src="multimedia/instagram.png" alt=""> </a>
+            <a href="paginas/Contacto.html"> | CONTACTO</a>
+        </li>
+    </footer>
 </body>
+
 </html>

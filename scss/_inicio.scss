@@ -1,0 +1,48 @@
+$colorFondos: #1c1c1c;
+$colorlinks: #ecebe4;
+$fuenteGrande: 15px;
+
+
+.mainInicio { /*FLEXBOX*/
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+    ul li {
+        list-style: none;
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 20px;
+        position: absolute;
+        right:200px ;
+        text-align: right;
+        background-color: $colorFondos;
+        text-decoration: none;
+        border-radius: 10px;
+
+            a {
+            text-decoration: none;
+            color: $colorlinks;
+
+            &:hover {
+                color: $colorlinks;
+                text-decoration: none;
+                border-radius: 10px;
+                padding: 3px;
+            }
+        }
+        }
+
+/*     .fotoGrande { AJUSTA EL FONDO DE UNA IMAGEN CON EL COLOR DE FONDO
+        mix-blend-mode: multiply; 
+    }
+ */
+}
+.animate_animated.animate__bounceInDown{
+    display: none;
+}
