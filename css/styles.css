@@ -63,7 +63,21 @@
   }
 }
 /* FIN INICIO */
-@media screen and (min-width: 10px) and (max-width: 780px) {
+@media screen and (min-width: 481px) and (max-width: 780px) {
+  .Remes {
+    display: initial;
+  }
+  .frases {
+    height: 700px;
+    overflow: scroll;
+    text-align: center;
+  }
+}
+#carouselExample { /* PARA NO VER EL CARRUSEL EN TAMANO WEB */
+  display: none;
+}
+
+@media screen and (min-width: 10px) and (max-width: 480px) {
   /* PRODUCTOS */
   #carouselExample {
     display: initial;
@@ -340,10 +354,6 @@ footer img {
 }
 .frases img:hover {
   padding: 5px;
-}
-
-#carouselExample { /* PARA NO VER EL CARRUSEL EN TAMANO WEB */
-  display: none;
 }
 
 .mainOutlet {
