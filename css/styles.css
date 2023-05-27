@@ -294,6 +294,8 @@ footer {
   background-color: #1c1c1c;
   font-size: 15px;
   list-style: none;
+  position: absolute;
+  width: 100%;
 }
 footer a {
   text-decoration: none;
