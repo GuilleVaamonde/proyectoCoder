@@ -3,15 +3,17 @@ $colorlinks: #ecebe4;
 $fuenteGrande: 15px;
 
 .frases {
+    padding-bottom: 40px;
+
     img {
+        position: relative;
         height: 300px;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         margin: 5px;
         padding: 15px;
-        &:hover{
+
+        &:hover {
             padding: 5px;
         }
     }
-    
 }
-

@@ -6,6 +6,10 @@ footer{
     background-color: $colorFondos;
     font-size: $fuenteGrande;
     list-style: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
     a{
         text-decoration: none;
         color: $colorlinks;

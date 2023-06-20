@@ -295,6 +295,10 @@ footer {
   font-size: 15px;
   list-style: none;
   position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
   width: 100%;
 }
 footer a {
@@ -348,7 +352,16 @@ footer img {
   display: none;
 }
 
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+.frases {
+  padding-bottom: 40px;
+}
 .frases img {
+  position: relative;
   height: 300px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   margin: 5px;
@@ -397,7 +410,6 @@ footer img {
 
 .divnosotros {
   position: relative;
-  height: 430px;
   width: 100%;
   display: flex;
 }

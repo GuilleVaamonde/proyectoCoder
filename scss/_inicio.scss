@@ -46,3 +46,7 @@ $fuenteGrande: 15px;
 .animate_animated.animate__bounceInDown{
     display: none;
 }
+body{
+    position: relative;
+    min-height: 100vh;
+}
