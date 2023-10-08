@@ -1,0 +1,43 @@
+$colorFondos: #1c1c1c;
+$colorlinks: #ecebe4;
+$fuenteGrande: 15px;
+
+
+
+/* .card-img-top{
+    position: relative;
+    height: 300px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin: 5px;
+    padding: 15px;
+} */
+.pruebaBootstrap {
+    position: flex;
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+
+    .textoCard {
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: center;
+        padding: 5px;
+        height: 100%;
+    }
+}
+
+.reme1 {
+    img {
+        padding: 10px;
+        height: 300px;
+        width: 300px;
+    }
+
+}
+.paraFlex{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

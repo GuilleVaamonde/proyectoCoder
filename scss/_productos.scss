@@ -4,7 +4,6 @@ $fuenteGrande: 15px;
 
 .frases {
     padding-bottom: 40px;
-
     img {
         position: relative;
         height: 300px;
@@ -14,6 +13,8 @@ $fuenteGrande: 15px;
 
         &:hover {
             padding: 5px;
+            cursor:pointer;
         }
     }
+
 }

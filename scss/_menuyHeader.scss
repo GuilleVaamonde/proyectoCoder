@@ -11,9 +11,11 @@ $fuenteGrande:15px;
 }
 
 header{
+    height: 15sem;
     background-color: $colorFondos;
 }
 nav ul{
+    padding: 15px;
     font-size: $fuenteGrande;
     display: flex;
     flex-direction: row;

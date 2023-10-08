@@ -28,54 +28,64 @@ $fuenteGrande: 15px;
     }
 } */
 
-.container{
+.container {
     display: flex;
     width: 100%;
     height: 430px;
     align-items: center;
-    justify-content:space-around;
-    form{
+    justify-content: space-around;
+
+    form {
         width: 400px;
         height: 250px;
         border-radius: 10px;
         background-color: $colorFondos;
     }
-    .textoForm{
+
+    .textoForm {
         margin-top: 50px;
         margin-left: 10px;
     }
-    .inputs{
+
+    .inputs {
         margin-bottom: 5px;
-        width:370px;
+        width: 370px;
         height: 30px;
         font-size: 17px;
     }
-    textarea{
-        width:370px;
+
+    textarea {
+        width: 370px;
         font-size: 11px;
     }
-    button{
+
+    button {
         background-color: $colorlinks;
         color: $colorFondos;
         height: 23px;
         width: 370px;
         margin-left: 3px;
         border-radius: 15px;
-    &:hover{
-        height: 45px;
-        font-size: 25px;
+
+        &:hover {
+            height: 45px;
+            font-size: 25px;
+        }
+
+        &:active {
+            background-color: #ffb703;
+        }
     }
-    &:active{
-        background-color: #ffb703;
-    }
-    }
-    .submit{
+
+    .submit {
         font-size: 18px;
     }
-        label{
+
+    label {
         color: $colorlinks;
     }
-    .checkbox{
+
+    .checkbox {
         margin-left: 120px;
     }
 }
@@ -83,10 +93,27 @@ $fuenteGrande: 15px;
 form {
     display: inline-block;
     /* Permite que el formulario y el mapa se alineen uno al lado del otro */
-    width: 500px;}
-#mapa {
-    display: inline-block; /* Permite que el mapa se alinee uno al lado del otro */
+    width: 500px;
 }
-.linkMapa{
+
+#mapa {
+    display: inline-block;
+    /* Permite que el mapa se alinee uno al lado del otro */
+}
+
+.linkMapa {
     display: none;
+}
+
+.fondoContacto {
+    background-image: url(../multimedia/download.png);    
+}
+.formResponsive{
+    h3{
+        border: solid 2px black;
+        background-color: $colorlinks;
+        border-radius: 30px;
+        padding: 5px;
+        text-align: center;
+    }
 }
